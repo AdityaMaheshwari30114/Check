@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-3">
+        Apple
+    </div>
+    <div class="col-3">
+        Mango
+    </div>
+    <div class="col-3">
+        Banana
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+    <input [type]="inputType">
+     <input [type]="inputType1">
+     <input type="text" [value]="name" class="form-control">
+     
+     <input type="text" [(ngModel)]="name">
+    </div>
+</div><br>
+<br>
+<div class="col-3">
+    <input type="text" [value]="selected">  
+</div>
+<div class="col-3">
+    <select [(ngModel)] = "selected">
+        <option value="MP">MP</option>
+        <option value="MH">MH</option>
+        <option value="UK">UK</option>
+        <option value="UP">UP</option>
+    </select>
+</div>
+
+<div class="row">
+    <div class="col-3">
+    <button class="btn-btn-success" (click)="showWelcome()">Show Alert</button>
+    </div>
+    <div class="col-3">
+    <button class="btn-btn-success" (click)="showMessage('Hello Angular')">Show Msg</button>
+    </div>
+</div>
